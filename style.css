@@ -119,3 +119,36 @@ body{
     visibility: hidden;
     position: absolute;
 }
+
+#pp{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+ 
+}
+
+#pp-container{
+    color: #818181;
+    margin: 0 auto;
+    height: 40%;
+}
+
+#pp-container{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 27pt;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    
+}
+
+#name{
+    font-size: 20pt;
+}
+
+#title{
+    font-size: 12pt;
+}
