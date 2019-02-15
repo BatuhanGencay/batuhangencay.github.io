@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<script>
+  function onButtonClick(item){
+        var button =document.getElementById("Page-"+item);
+        
+        var pages =document.querySelectorAll(".page");
+        
+        for (let index = 0; index < pages.length; index++) {
+            pages[index].style.visibility="hidden";
+            
+            
+        }
+        button.style.visibility="visible";
+  }
+
+
+
+</script>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <header>
+            Batuhan The Mastermind
+        </header>
+        <div class="container">
+            <div id="left-sidebar" >
+                <div id="menu">
+                    
+                        <a href="#" id="About" onclick="onButtonClick(this.id)"><i class="fa fa-fw fa-address-card-o"></i>&nbsp;About</a>
+                        <a href="#" id="Projects" onclick="onButtonClick(this.id)"><i class="fa fa-fw fa-code-fork"></i>&nbsp;Projects</a>
+                        <a href="#" id="Blog" onclick="onButtonClick(this.id)"><i class="fa fa-fw fa-book"></i>&nbsp;Blog</a>
+                        <a href="#" id="Contact" onclick="onButtonClick(this.id)"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
+                    
+                </div>
+            </div>
+            <div id="content">
+                <div class="page" id="Page-About">
+                    <h3>ABOUT</h3>
+                    <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada neque at vestibulum pellentesque. Sed massa nisi, porta at tristique at, blandit nec orci. Suspendisse vulputate bibendum risus, laoreet sollicitudin arcu malesuada sed. Donec sollicitudin tincidunt enim, ut gravida enim porta sed. Nullam condimentum sollicitudin massa, nec mollis nibh tristique ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel iaculis tellus. Nulla arcu magna, volutpat eu nibh sit amet, pellentesque egestas leo. Vestibulum ac tincidunt dolor, id ornare massa. Suspendisse ut ornare arcu. Sed sit amet eros ac risus feugiat porta sed quis mauris. Nullam non mi vel est tincidunt faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin auctor vulputate maximus.   
+                    </p>
+                    <p>
+                            Phasellus at imperdiet risus. Fusce ac sem eu diam tristique ultrices blandit ullamcorper nisl. Maecenas egestas bibendum mollis. Nullam vel molestie sapien, in sodales ante. Pellentesque tempor, elit et congue porta, nulla quam semper sapien, at tristique turpis mi eget erat. Donec id tincidunt erat. Vestibulum elit lacus, posuere in lacinia et, tempus nec mi. Proin risus justo, volutpat lobortis maximus sit amet, tempus hendrerit nulla. Donec viverra mattis massa vel posuere. Aenean odio leo, cursus ac ipsum ut, mollis posuere risus. 
+                    </p>
+                </div>
+                <div class="page" id="Page-Projects">
+                        <h3>PROJECTS</h3>
+                        <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada neque at vestibulum pellentesque. Sed massa nisi, porta at tristique at, blandit nec orci. Suspendisse vulputate bibendum risus, laoreet sollicitudin arcu malesuada sed. Donec sollicitudin tincidunt enim, ut gravida enim porta sed. Nullam condimentum sollicitudin massa, nec mollis nibh tristique ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel iaculis tellus. Nulla arcu magna, volutpat eu nibh sit amet, pellentesque egestas leo. Vestibulum ac tincidunt dolor, id ornare massa. Suspendisse ut ornare arcu. Sed sit amet eros ac risus feugiat porta sed quis mauris. Nullam non mi vel est tincidunt faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin auctor vulputate maximus.   
+                        </p>
+                        <p>
+                                Phasellus at imperdiet risus. Fusce ac sem eu diam tristique ultrices blandit ullamcorper nisl. Maecenas egestas bibendum mollis. Nullam vel molestie sapien, in sodales ante. Pellentesque tempor, elit et congue porta, nulla quam semper sapien, at tristique turpis mi eget erat. Donec id tincidunt erat. Vestibulum elit lacus, posuere in lacinia et, tempus nec mi. Proin risus justo, volutpat lobortis maximus sit amet, tempus hendrerit nulla. Donec viverra mattis massa vel posuere. Aenean odio leo, cursus ac ipsum ut, mollis posuere risus. 
+                        </p>
+                </div>
+                <div class="page" id="Page-Blog">
+                            <h3>BLOG</h3>
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada neque at vestibulum pellentesque. Sed massa nisi, porta at tristique at, blandit nec orci. Suspendisse vulputate bibendum risus, laoreet sollicitudin arcu malesuada sed. Donec sollicitudin tincidunt enim, ut gravida enim porta sed. Nullam condimentum sollicitudin massa, nec mollis nibh tristique ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel iaculis tellus. Nulla arcu magna, volutpat eu nibh sit amet, pellentesque egestas leo. Vestibulum ac tincidunt dolor, id ornare massa. Suspendisse ut ornare arcu. Sed sit amet eros ac risus feugiat porta sed quis mauris. Nullam non mi vel est tincidunt faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin auctor vulputate maximus.   
+                            </p>
+                            <p>
+                                    Phasellus at imperdiet risus. Fusce ac sem eu diam tristique ultrices blandit ullamcorper nisl. Maecenas egestas bibendum mollis. Nullam vel molestie sapien, in sodales ante. Pellentesque tempor, elit et congue porta, nulla quam semper sapien, at tristique turpis mi eget erat. Donec id tincidunt erat. Vestibulum elit lacus, posuere in lacinia et, tempus nec mi. Proin risus justo, volutpat lobortis maximus sit amet, tempus hendrerit nulla. Donec viverra mattis massa vel posuere. Aenean odio leo, cursus ac ipsum ut, mollis posuere risus. 
+                            </p>
+                </div>
+                <div class="page" id="Page-Contact">
+                                <h3>CONTACT</h3>
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada neque at vestibulum pellentesque. Sed massa nisi, porta at tristique at, blandit nec orci. Suspendisse vulputate bibendum risus, laoreet sollicitudin arcu malesuada sed. Donec sollicitudin tincidunt enim, ut gravida enim porta sed. Nullam condimentum sollicitudin massa, nec mollis nibh tristique ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel iaculis tellus. Nulla arcu magna, volutpat eu nibh sit amet, pellentesque egestas leo. Vestibulum ac tincidunt dolor, id ornare massa. Suspendisse ut ornare arcu. Sed sit amet eros ac risus feugiat porta sed quis mauris. Nullam non mi vel est tincidunt faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin auctor vulputate maximus.   
+                                </p>
+                                <p>
+                                        Phasellus at imperdiet risus. Fusce ac sem eu diam tristique ultrices blandit ullamcorper nisl. Maecenas egestas bibendum mollis. Nullam vel molestie sapien, in sodales ante. Pellentesque tempor, elit et congue porta, nulla quam semper sapien, at tristique turpis mi eget erat. Donec id tincidunt erat. Vestibulum elit lacus, posuere in lacinia et, tempus nec mi. Proin risus justo, volutpat lobortis maximus sit amet, tempus hendrerit nulla. Donec viverra mattis massa vel posuere. Aenean odio leo, cursus ac ipsum ut, mollis posuere risus. 
+                                </p>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </body>
+</html>
