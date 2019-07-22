@@ -14,7 +14,7 @@ header,footer{
     font-weight:lighter ;
     color: #818181;
     text-align: center;
-    border-bottom: 1px solid rgb(73, 73, 73); 
+    
 }
 header{
     height: auto;
@@ -31,7 +31,7 @@ footer{
 }
 body{
     background-color: #212121;
-    height: 95%;
+    height: 900px;
     
     
     
@@ -39,37 +39,39 @@ body{
 .container{
     
     width: 100%;
-    height: 90%;
+    height: 900px;
     margin: 0 auto;
     overflow:hidden;
     position: relative;
-    display: table;
-    border-right: 1px solid rgb(73, 73, 73);
+    display: inline-block;
+    border: 1px solid rgb(73, 73, 73);
+    font-size: 0;
 }
 
 #left-sidebar{
-    width: 150px;
-    height: 100%;
+    width: 15%;
+    height: 900px;
     display: inline-block;
     vertical-align: top;
-    display: table-cell;
+    
     padding-top: 20px;
     padding-bottom: 20px;
-    border-right: 1px solid rgb(73, 73, 73);
-    border-bottom: 1px solid rgb(73, 73, 73);
+    border-right: 1px solid rgb(73, 73, 73);    
     background-color: #212121;
-    border-left: 1px solid rgb(73, 73, 73);
+    
 }
 
 #content{
-    color: #818181;
-    width: 85%;
-    height: 100%;
-    display: table-cell;
-    vertical-align: top;
+    /* color: #818181; */
+    color: lightgray;
+    width: 84.94%;
+    height: 900px;
+    display: inline-block;
+
     margin:0 auto;
-    border-bottom: 1px solid rgb(73, 73, 73);
+    
     background-color: #292929;
+    overflow: hidden;
     
     
 }
@@ -77,7 +79,7 @@ body{
 #menu{
     
     width: 100%;
-    height: 100%;
+    height: 50%;
     
 }
 
@@ -112,43 +114,205 @@ body{
 .page{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    height: 70%;
-    width: 70%;
+    height: 900px;
+    width: 85%;
     margin: 0 auto;
     margin-left: 100px;
-    visibility: hidden;
-    position: absolute;
+    flex-shrink: 0;
+    position: relative;
+    transition: all 2s ease 0s;
+    overflow-y:hidden;
+    top:0px;
+    font-size: 17px;
+    
 }
 
 #pp{
     width: 50%;
-    height: 50%;
+    
     margin: 0 auto;
     display: block;
     border-radius: 50%;
  
 }
 
+#name{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin-top: 20px;
+    font-size: 20pt;
+    font-weight: normal;
+}
+
 #pp-container{
     color: #818181;
     margin: 0 auto;
-    height: 40%;
-}
-
-#pp-container{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    height: 30%;
+    margin: 0 auto;
+    font-weight: 500;
     line-height: 27pt;
     text-align: center;
-    vertical-align: middle;
-    display: inline-block;
+    
+    display: block;
+}
+
+
+
+
+#title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+}
+
+.skills-container{
+    width: 90%;
+    background-color:#292929;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-stretch: condensed;
+    text-align: right;
+    font-size: 14px;
+}
+
+.skills-container span{
+    float: left;
+}
+
+.tag{
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(58, 58, 58);
+    width: 6%;
+}
+.skills{
+    width: 80%;
+    
+    padding: 10px;
+    color:lightgray;
+    border-radius: 5px;
+}
+
+#Skill{
+    float: right;
+    width: 68%;
     
 }
 
-#name{
-    font-size: 20pt;
+#Info{
+    
+    vertical-align: middle;
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    margin: auto 0;
+    
 }
+.cpp{width:90%;background-color: green;}
+.python{width:60%;background-color:blue;}
+.csharp{width:90%;background-color: red;}
+.js{width:50%;background-color: purple;}
 
-#title{
-    font-size: 12pt;
-}
+ul {
+    margin-left: 10px;
+    list-style-image: url('https://www.canadianbubblesoccer.com/wp-content/uploads/2018/05/green-circle.png');
+  }
+  
+  .outer-list {
+    position: relative;
+  }
+  
+  .outer-list:after {
+    position: absolute;
+    height: calc(100% - 95px);
+    width: 5px;
+    content: '';
+    display: block;
+    background-color: purple;
+    left: 10px;
+    top: 45px;
+  }
+  
+  ul li {
+    padding: 5px 0;
+  }
+  
+  ul li span{
+    display: ruby-text;
+    font-size: 20px;
+    margin: -6px;
+  }
+
+  .inner-list {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  
+  .inner-list:before {
+    position: absolute;
+    height: 57px;
+    width: 5px;
+    content: '';
+    display: block;
+    background-color: green;
+    transform: rotate(-45deg);
+    left: 5px;
+    bottom: 100%;
+    margin-bottom: -27px;
+  }
+  
+  .inner-list:after {
+    position: absolute;
+    height: 48px;
+    width: 5px;
+    content: '';
+    display: block;
+    background-color: red;
+    transform: rotate(45deg);
+    left: -1px;
+    top: 100%;
+    margin-top: -20px;
+  }
+  
+  .inner-list li {
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  .inner-list li:after {
+    position: absolute;
+    height: calc(100% - 20px);
+    width: 5px;
+    content: '';
+    display: block;
+    background-color: blue;
+    left: -30.5px;
+    top: 45px;
+  }
+  
+  .inner-list li:last-child:after {
+    display: none;
+  }
+
+
+
+
+
+.content {
+    margin: auto;
+    text-align: center;
+  }
+  
+  #c {
+    margin: auto;
+  }
+
+  .pentagon {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 3px 3px 28px 3px;
+    display:inline-block;
+  }

@@ -1,26 +1,11 @@
 <!DOCTYPE html>
-<script>
-  function onButtonClick(item){
-        var button =document.getElementById("Page-"+item);
-        
-        var pages =document.querySelectorAll(".page");
-        
-        for (let index = 0; index < pages.length; index++) {
-            pages[index].style.visibility="hidden";
-            
-            
-        }
-        button.style.visibility="visible";
-  }
 
-
-
-</script>
 <html>
     <head>
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="app.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        
     </head>
     <body>
         <header>
@@ -32,7 +17,7 @@
                         <img id="pp" src="pp.jpg"  >
                         <i id="name" >Batuhan Gencay</i>
                         <br>
-                        <i id="title">R&D Software Development Engineer</i>
+                        <i id="title">Software Development Engineer</i>
                 </div>
                 <div id="menu">
                     
@@ -45,22 +30,42 @@
             </div>
             <div id="content">
                 <div class="page" id="Page-About">
-                    <h3>ABOUT</h3>
-                    <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada neque at vestibulum pellentesque. Sed massa nisi, porta at tristique at, blandit nec orci. Suspendisse vulputate bibendum risus, laoreet sollicitudin arcu malesuada sed. Donec sollicitudin tincidunt enim, ut gravida enim porta sed. Nullam condimentum sollicitudin massa, nec mollis nibh tristique ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel iaculis tellus. Nulla arcu magna, volutpat eu nibh sit amet, pellentesque egestas leo. Vestibulum ac tincidunt dolor, id ornare massa. Suspendisse ut ornare arcu. Sed sit amet eros ac risus feugiat porta sed quis mauris. Nullam non mi vel est tincidunt faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin auctor vulputate maximus.   
-                    </p>
-                    <p>
-                            Phasellus at imperdiet risus. Fusce ac sem eu diam tristique ultrices blandit ullamcorper nisl. Maecenas egestas bibendum mollis. Nullam vel molestie sapien, in sodales ante. Pellentesque tempor, elit et congue porta, nulla quam semper sapien, at tristique turpis mi eget erat. Donec id tincidunt erat. Vestibulum elit lacus, posuere in lacinia et, tempus nec mi. Proin risus justo, volutpat lobortis maximus sit amet, tempus hendrerit nulla. Donec viverra mattis massa vel posuere. Aenean odio leo, cursus ac ipsum ut, mollis posuere risus. 
-                    </p>
+                        <div id="Info" >
+                                        <ul class="outer-list">
+                                                        <li><span>Born</span>
+                                                          <ul class="inner-list">
+                                                            <li><span>Started Primary School xx.xx.xxxx</span>
+                                                              <li><span>Finished Primary School xx.xx.xxxx</span>
+                                                                </ul>
+                                                              </li>
+                                                              <li></li>
+                                                            </ul>
+                                                            <ul class="outer-list">
+                                                                <li></li>
+                                                                <li>
+                                                                     <ul class="inner-list">
+                                                                    <li><span>asdasdas</span></li>
+                                                                    <li><span>asdfdfsaasdf</span></li>
+                                                            </ul>
+                                                            
+                                                            </li>
+                                                           
+                                                            <li><span>Item 1</span></li>
+                                                            <li><span>Item 1</span></li>
+                                                            <li><span>Item 1</span></li>
+                                                          </ul>
+                                                        </li>
+                                                        <li></li>
+                                                      </ul>   
+                        </div>
+                        <div id="Skill">
+                    <h3 style="text-align:center">Skills</h3>
+                    <div class="content"></div>
+                     
+                </div>
                 </div>
                 <div class="page" id="Page-Projects">
-                        <h3>PROJECTS</h3>
-                        <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada neque at vestibulum pellentesque. Sed massa nisi, porta at tristique at, blandit nec orci. Suspendisse vulputate bibendum risus, laoreet sollicitudin arcu malesuada sed. Donec sollicitudin tincidunt enim, ut gravida enim porta sed. Nullam condimentum sollicitudin massa, nec mollis nibh tristique ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel iaculis tellus. Nulla arcu magna, volutpat eu nibh sit amet, pellentesque egestas leo. Vestibulum ac tincidunt dolor, id ornare massa. Suspendisse ut ornare arcu. Sed sit amet eros ac risus feugiat porta sed quis mauris. Nullam non mi vel est tincidunt faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin auctor vulputate maximus.   
-                        </p>
-                        <p>
-                                Phasellus at imperdiet risus. Fusce ac sem eu diam tristique ultrices blandit ullamcorper nisl. Maecenas egestas bibendum mollis. Nullam vel molestie sapien, in sodales ante. Pellentesque tempor, elit et congue porta, nulla quam semper sapien, at tristique turpis mi eget erat. Donec id tincidunt erat. Vestibulum elit lacus, posuere in lacinia et, tempus nec mi. Proin risus justo, volutpat lobortis maximus sit amet, tempus hendrerit nulla. Donec viverra mattis massa vel posuere. Aenean odio leo, cursus ac ipsum ut, mollis posuere risus. 
-                        </p>
+                                
                 </div>
                 <div class="page" id="Page-Blog">
                             <h3>BLOG</h3>
@@ -85,3 +90,169 @@
         <footer></footer>
     </body>
 </html>
+<script>
+        function onButtonClick(item){
+        //       var button =document.getElementById("Page-"+item);
+              
+        //       var pages =document.querySelectorAll(".page");
+              
+        //       for (let index = 0; index < pages.length; index++) {
+        //           pages[index].style.visibility="hidden";
+                  
+                  
+        //       }
+        //       button.style.visibility="visible";
+                var pages = document.querySelectorAll(".page");
+                for (let index = 0; index < pages.length; index++) {
+                if (item=="About") {
+                        pages[index].style.top="0px";   
+                }
+                else if(item=="Projects"){
+                        pages[index].style.top="-900px";
+                }
+                else if(item=="Blog"){
+                        pages[index].style.top="-1800px";
+                }
+                else if(item=="Contact"){
+                        pages[index].style.top="-2700px";
+                }
+        }
+        }
+      
+      
+      
+</script>
+<script>
+var skills = [
+  {"header" : "INTERESTS",
+    "captions" : [
+      "Cooking",
+      "Web",
+      "Mobile",
+      "Design",
+      "AI"
+    ],
+    "values" : [
+      0.70,
+      0.90,
+      0.70,
+      0.80,
+      0.70
+    ]
+  },
+  {"header" : "LANGUAGES",
+    "captions" : [
+      "nodeJS",
+      "PHP",
+      "JS",
+      "Ruby",
+      "Java"
+    ],
+    "values" : [
+      0.80,
+      0.85,
+      0.90,
+      0.70,
+      0.90
+    ]
+  },
+  {"header" : "MISC",
+    "captions" : [
+      "Eclipse",
+      "Git",
+      "Rails",
+      "OpenGL",
+      "Linux"
+    ],
+    "values" : [
+      0.85,
+      0.85,
+      0.75,
+      0.60,
+      0.80
+    ]
+  }
+];
+
+var pentagonIndex = 0;
+var valueIndex = 0;
+var width = 0;
+var height = 0;
+var radOffset = Math.PI/2
+var sides = 5; // Number of sides in the polygon
+var theta = 2 * Math.PI/sides; // radians per section
+
+function getXY(i, radius) {
+  return {"x": Math.cos(radOffset +theta * i) * radius*width + width/2,
+    "y": Math.sin(radOffset +theta * i) * radius*height + height/2};
+}
+
+var hue = [];
+var hueOffset = 25;
+
+for (var s in skills) {
+  $(".content").append('<div class="pentagon" id="interests"><div class="header"></div><canvas class="pentCanvas"/></div>');
+  hue[s] = (hueOffset + s * 255/skills.length) % 255;
+}
+
+$(".pentagon").each(function(index){
+  width = $(this).width();
+  height = $(this).height();
+  var ctx = $(this).find('canvas')[0].getContext('2d');
+  ctx.canvas.width = width;
+  ctx.canvas.height = height;
+  ctx.font="15px Monospace";
+  ctx.textAlign="center";
+  
+  /*** LABEL ***/
+  color = "hsl("+hue[pentagonIndex]+", 100%, 50%)";
+  ctx.fillStyle = color;
+  ctx.fillText(skills[pentagonIndex].header, width/2, 15);
+
+  ctx.font="13px Monospace";   
+
+  /*** PENTAGON BACKGROUND ***/
+  for (var i = 0; i < sides; i++) {
+    // For each side, draw two segments: the side, and the radius
+    ctx.beginPath();
+    xy = getXY(i, 0.3);
+    colorJitter = 25 + theta*i*2;
+    color = "hsl("+hue[pentagonIndex]+",100%," + colorJitter + "%)";
+    ctx.fillStyle = color;
+    ctx.strokeStyle = color;
+    ctx.moveTo(0.5*width, 0.5*height); //center
+    ctx.lineTo(xy.x, xy.y);
+    xy = getXY(i+1, 0.3);
+    ctx.lineTo(xy.x, xy.y);
+    xy = getXY(i, 0.37);
+    console.log();
+    ctx.fillText(skills[ pentagonIndex].captions[valueIndex],xy.x, xy.y +5);
+    valueIndex++;
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+  }
+  
+  valueIndex = 0;
+  ctx.beginPath();
+  ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
+  ctx.strokeStyle = "rgba(0, 0, 0, 0.3)";
+  ctx.lineWidth = 5;
+  var value = skills[pentagonIndex].values[valueIndex];
+  xy = getXY(i, value * 0.3);
+  ctx.moveTo(xy.x,xy.y);
+  /*** SKILL GRAPH ***/
+  for (var i = 0; i < sides; i++) {
+    xy = getXY(i, value * 0.3);
+    ctx.lineTo(xy.x,xy.y);
+    valueIndex++;
+    value = skills[pentagonIndex].values[valueIndex];
+  }
+  ctx.closePath();
+  ctx.stroke();
+  ctx.fill();
+  valueIndex = 0;  
+  pentagonIndex++;
+});
+
+</script>
