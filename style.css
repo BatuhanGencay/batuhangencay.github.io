@@ -2,17 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 html{
-    height: 100%;
-    width:100%;
+    width:90%;
+    margin: 0 auto;
 }
 header,footer{
     
     width:100%;
-    height:10%;
     font-family: 'Open Sans', sans-serif;
     font-size: 30pt;
     font-weight:lighter ;
-    color: #818181;
+    color: rgb(136, 146, 176);
     text-align: center;
     
 }
@@ -30,8 +29,10 @@ footer{
     bottom: 0px;
 }
 body{
-    background-color: #212121;
-    height: 900px;
+    background-color: rgb(10, 25, 47);
+    height: 100% !important;
+    margin-top: 2% !important;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     
     
     
@@ -39,38 +40,36 @@ body{
 .container{
     
     width: 100%;
+    
     height: 900px;
     margin: 0 auto;
     overflow:hidden;
     position: relative;
     display: inline-block;
-    border: 1px solid rgb(73, 73, 73);
     font-size: 0;
 }
 
 #left-sidebar{
     width: 15%;
-    height: 900px;
+    height: 98%;
     display: inline-block;
     vertical-align: top;
-    
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-right: 1px solid rgb(73, 73, 73);    
-    background-color: #212121;
+    border-radius: 5px;
+    padding-top: 1%;
+    background-color: rgb(23, 42, 69);
     
 }
 
 #content{
     /* color: #818181; */
     color: lightgray;
-    width: 84.94%;
-    height: 900px;
+    margin-left: 1%;
+    width: 84%;
+    height: 98% !important;
     display: inline-block;
 
-    margin:0 auto;
-    
-    background-color: #292929;
+    border-radius: 5px;
+    background-color: rgb(23, 42, 69);
     overflow: hidden;
     
     
@@ -99,7 +98,7 @@ body{
     color: black;
     height: 35px;
     
-    background-color: #212121;
+    background-color: rgb(23, 42, 69);
     color: #818181;
     
     
@@ -114,10 +113,9 @@ body{
 .page{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    height: 900px;
-    width: 85%;
-    margin: 0 auto;
-    margin-left: 100px;
+    height: 97%;
+    width: 100%;
+    /* margin: 0 auto; */
     flex-shrink: 0;
     position: relative;
     transition: all 2s ease 0s;
@@ -167,7 +165,6 @@ body{
 .skills-container{
     width: 90%;
     background-color:#292929;
-    border: 1px solid gray;
     border-radius: 5px;
     margin-top: 5px;
     font-stretch: condensed;
@@ -195,7 +192,8 @@ body{
 
 #Skill{
     float: right;
-    width: 68%;
+    width: 65%;
+    position: relative;
     
 }
 
@@ -203,20 +201,21 @@ body{
     
     vertical-align: middle;
     position: absolute;
-    width: 50%;
-    height: 80%;
+    width: 35%;
+    height: 100%;
     margin: auto 0;
-    
+    overflow: scroll;
+    scrollbar-width: none;
 }
+
+
+
+
 .cpp{width:90%;background-color: green;}
 .python{width:60%;background-color:blue;}
 .csharp{width:90%;background-color: red;}
 .js{width:50%;background-color: purple;}
 
-ul {
-    margin-left: 10px;
-    list-style-image: url('https://www.canadianbubblesoccer.com/wp-content/uploads/2018/05/green-circle.png');
-  }
   
   .outer-list {
     position: relative;
@@ -316,3 +315,90 @@ ul {
     padding: 3px 3px 28px 3px;
     display:inline-block;
   }
+
+
+  .terminal-bar {
+    background-color: #eae8e9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    position: relative;
+    z-index: 9999;
+}
+
+.dark-mode {
+    background-image: linear-gradient(180deg, #464248 0%, #3b383d 100%);
+    border-bottom: 1px solid rgba(66, 66, 66, 0.5);
+}
+
+.icon-btn {
+  border-radius: 50%;
+  margin-top: 7px;
+  height: 15px;
+  width: 15px;
+  margin-bottom: 0.5rem;
+  
+}
+
+.terminal-bar > div.icon-btn:first-child {
+  margin-left: 0.6rem;
+}
+
+.terminal-bar > div.icon-btn:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.terminal-bar > div.icon-btn:last-child {
+  margin-right: 0.6rem;
+}
+
+.close {
+  background-color: rgb(212, 105, 105);
+  border: 1px solid rgba(61, 55, 55);
+}
+
+.max {
+  background-color: rgb(90, 86, 86);
+  border: 1px solid rgba(61, 55, 55);
+}
+
+.min {
+  background-color: rgb(90, 86, 86);
+  border: 1px solid rgba(61, 55, 55);
+}
+
+.terminal-window {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 254px;
+  padding: .5rem 0rem 0rem .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-bg {
+  background-color: rgb(23, 42, 69);
+}
+
+.shadow {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode-text {
+  color: #bdb9bf !important;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.terminal-bar-text {
+  position: absolute;
+  margin-top: 5px;
+  color: lightgray;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+

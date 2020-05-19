@@ -3,7 +3,9 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
@@ -16,7 +18,7 @@
                         <img id="pp" src="pp.jpg"  >
                         <i id="name" >Batuhan Gencay</i>
                         <br>
-                        <i id="title">Software Development Engineer</i>
+                        <!-- <i id="title">Contract Coder</i> -->
                 </div>
                 <div id="menu">
                     
@@ -28,43 +30,61 @@
                 </div>
             </div>
             <div id="content">
+              <div class="terminal-bar dark-mode">
+                <div class="icon-btn close"></div>
+                <div class="icon-btn min"></div>
+                <div class="icon-btn max"></div>
+                <div class="terminal-bar-text is-hidden-mobile dark-mode-text">guest@bg:~$</div>
+              </div>
                 <div class="page" id="Page-About">
                         <div id="Info" >
-                                        <ul class="outer-list">
-                                                        <li><span>Born</span>
-                                                          <ul class="inner-list">
-                                                            <li><span>Started Primary School xx.xx.xxxx</span>
-                                                              <li><span>Finished Primary School xx.xx.xxxx</span>
-                                                                </ul>
-                                                              </li>
-                                                              <li></li>
-                                                            </ul>
-                                                            <ul class="outer-list">
-                                                                <li></li>
-                                                                <li>
-                                                                     <ul class="inner-list">
-                                                                    <li><span>asdasdas</span></li>
-                                                                    <li><span>asdfdfsaasdf</span></li>
-                                                            </ul>
-                                                            
-                                                            </li>
-                                                           
-                                                            <li><span>Item 1</span></li>
-                                                            <li><span>Item 1</span></li>
-                                                            <li><span>Item 1</span></li>
-                                                          </ul>
-                                                        </li>
-                                                        <li></li>
-                                                      </ul>   
+                          <div class="w3-twothird" style="width: 100% !important;">
+			
+                            <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+                              <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience</h2>
+                              
+                              <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Artificial Intelligence Engineer / Amani AI</b></h5>
+                                <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2020 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
+                                <p>&#9654; Computer Vision </br>&#9654; Deep Learning</p>
+ 
+                                <hr>
+                              </div>
+                              <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Software Development Specialist / Artge Technologies</b></h5>
+                                <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right" ></i>September 2018 - March 2020</h6>
+                                <p>&#9654; Face Recognition </br>&#9654; Deep Learning</p>
+                                
+                            </div>
+                          </div>
+                          
+                          <div class="w3-container w3-card-2 w3-white">
+                                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
+                                <div class="w3-container">
+                                  <h5 class="w3-opacity"><b>Istanbul Technical University</br> Satelite Communication and Remote Sensing </b></h5>
+                                  <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
+                                  <hr>
+                                </div>
+                                <div class="w3-container">
+                                  <h5 class="w3-opacity"><b>Istanbul Technical University</br> Electronics and Communication Engineering</b></h5>
+                                  <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 -2018</h6>
+                                  <hr>
+                                </div>
+                            </div>
+                            <!--===========End Right Column========-->
+                            </div>
+                            
                         </div>
                         <div id="Skill">
-                    <h3 style="text-align:center">Skills</h3>
-                    <div class="content"></div>
+                          <!-- <h2  style="text-align:center;color:purple"><i class="fas fa-hat-wizard"></i> Skills <i class="fas fa-hat-wizard"></i></h2> -->
+                    <div class="content" style="margin-top:10px;"></div>
                      
+                </div>
+                <div class="">
+
                 </div>
                 </div>
                 <div class="page" id="Page-Projects">
-                                
                 </div>
                 <div class="page" id="Page-Blog">
                             <h3>BLOG</h3>
@@ -107,13 +127,13 @@
                         pages[index].style.top="0px";   
                 }
                 else if(item=="Projects"){
-                        pages[index].style.top="-900px";
+                        pages[index].style.top="-870px";
                 }
                 else if(item=="Blog"){
-                        pages[index].style.top="-1800px";
+                        pages[index].style.top="-1740px";
                 }
                 else if(item=="Contact"){
-                        pages[index].style.top="-2700px";
+                        pages[index].style.top="-2610px";
                 }
         }
         }
@@ -125,48 +145,48 @@
 var skills = [
   {"header" : "INTERESTS",
     "captions" : [
-      "Cooking",
+      "IoT",
       "Web",
-      "Mobile",
-      "Design",
-      "AI"
+      "Computer Vision",
+      "AI",
+      "Music"
     ],
     "values" : [
+      0.80,
       0.70,
       0.90,
-      0.70,
-      0.80,
-      0.70
+      0.90,
+      0.80
     ]
   },
   {"header" : "LANGUAGES",
     "captions" : [
-      "nodeJS",
-      "PHP",
-      "JS",
-      "Ruby",
-      "Java"
+      "C#",
+      "Python",
+      "C++",
+      "HTML-CSS",
+      "JS"
     ],
     "values" : [
-      0.80,
+      0.70,
       0.85,
       0.90,
-      0.70,
-      0.90
+      0.50,
+      0.70
     ]
   },
   {"header" : "MISC",
     "captions" : [
-      "Eclipse",
+      "TensorFlow",
       "Git",
-      "Rails",
-      "OpenGL",
+      "OpenCV",
+      "SQL",
       "Linux"
     ],
     "values" : [
-      0.85,
-      0.85,
-      0.75,
+      0.90,
+      0.65,
+      0.90,
       0.60,
       0.80
     ]
