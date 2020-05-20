@@ -107,7 +107,7 @@ body{
     margin-left: 60px;
 }
 #menu a:hover{
-    background-color: #323232;
+    background-color: rgb(4, 24, 51);
 }
 
 .page{
@@ -127,7 +127,7 @@ body{
 
 #pp{
     width: 50%;
-    
+    margin-top: 10px !important;
     margin: 0 auto;
     display: block;
     border-radius: 50%;
@@ -137,7 +137,7 @@ body{
 #name{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 20pt;
     font-weight: normal;
 }
@@ -145,7 +145,7 @@ body{
 #pp-container{
     color: #818181;
     margin: 0 auto;
-    height: 30%;
+    height: 25  %;
     margin: 0 auto;
     font-weight: 500;
     line-height: 27pt;
@@ -402,3 +402,63 @@ body{
   font-weight: 500;
 }
 
+.cards{
+  width: 65%;
+  float: right;
+  position: relative;
+  
+}
+
+.main-card{
+  width: 80%;
+  margin:0 auto;
+}
+
+
+
+.card{
+  width: 95%;
+  margin:0 auto;
+  background-color: rgb(35, 75, 134);
+}
+.rad-info-box{	
+	margin-bottom:16px;
+	box-shadow:1px 1px 2px 0 #CCCCCC;
+	padding:20px;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
+	background:$base-color !important;
+}
+
+.rad-info-box i{
+	display:block;
+	background-clip:padding-box;
+	margin-right:15px;
+	height:60px;
+	width:60px;
+	border-radius:100%;
+	line-height:60px;
+	text-align:center;
+	font-size:4.4em;
+	position:absolute;	
+}
+
+.rad-info-box .value,
+.rad-info-box .heading{
+	display:block;	
+	position:relative;
+	color: $text-color;
+	text-align:right;
+	z-index:10;
+}
+
+.rad-info-box .heading{
+	font-size:1.2em;
+	font-weight:300;
+	text-transform:uppercase;
+}
+
+.rad-info-box .value{
+	font-size:1.4em;
+	font-weight:600;
+	margin-top:5px;
+}
